@@ -1,0 +1,56 @@
+.header {
+    padding: 40px 0 100px;
+
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        &__logo-link {
+            margin-right: 341px;
+        }
+
+        &__logo-img {
+            display: block;
+        }
+
+        &__phone {
+            border: 1px solid $color-gray-30;
+            background: $color-primary-blue;
+            padding: 14px 32px;
+            color: $color-white;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
+            margin-left: 49px;
+            transition: $transition-base;
+        }
+
+        &__phone:hover {
+            transform: scale(1.1);
+        }
+}
+
+.menu {
+    padding-top: 13px;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 33px;
+        }
+
+        &__link {
+            color: $color-gray-50;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%; 
+
+            &--active {
+                font-weight: 600;
+                line-height: 140%; 
+                margin-right: 9px;
+            }
+        }
+}

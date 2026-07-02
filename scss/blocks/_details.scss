@@ -1,0 +1,111 @@
+.details {
+    padding: 0 0 136px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__label-text {
+            color: $color-black;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            &:first-child {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                white-space: nowrap;
+
+                &::after {
+                    content: "";
+                    flex-grow: 1;
+                    max-width: 529px;
+                    height: 2px;
+                    background-color: $color-black;
+                }
+            }
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 600px 136px;
+            column-gap: 70px;
+            align-items: center;
+        }
+
+        &__title {
+            color: $color-gray-50;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin-bottom: 50px;
+            transform: translateX(12px);
+        }
+
+        &__item {
+            position: relative;
+            padding-left: 12px;
+            color: $color-gray-10;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+                left: 0;
+                top: 13px;
+
+                width: 3px;
+                height: 3px;
+
+                border-radius: 50%;
+                background-color: $color-gray-10;
+
+                transform: translateY(-50%);
+            }
+        }
+
+        &__button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 34px 14px 32px;
+            color: $color-white;
+            background: $color-primary-blue;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%; 
+            width: 100%;
+            max-width: 229px;
+            height: 49px;
+            transition: $transition-base;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+        }
+
+        &__file {
+            transform: translateY(30px);
+        }
+
+        &__file-icon {
+            transform-origin: center;
+            transition:
+            $transition-base;
+
+                &:hover {
+                    transform: translateY(-8px) scale(1.03);
+                }
+        }
+}
