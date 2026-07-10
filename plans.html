@@ -1,14 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>БК "Ясенево"</title>
-</head>
-<body>
-    <h1>Планировки</h1>
-    
-</body>
+  </head>
+  <body class="page-plans">
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo-link">
+          <img
+            src="./assets/images/index-images/svg/header-logo.svg"
+            alt="БК 'Ясенево'"
+            class="header__logo-img"
+          />
+        </a>
+
+        <a href="tel:+74952214022" class="header__logo-phone-link"></a>
+          <img
+            src="./assets/images/index-images/svg/phone-logo.svg"
+            alt="БК 'Ясенево'"
+            aria-label="Позвонить по номеру +7 495 221-40-22"
+            class="header__logo-phone-img"
+          />
+        </a>
+
+        <nav class="menu" aria-label="Главная навигация">
+          <ul class="menu__list menu__list--plans">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="location.html" class="menu__link">Расположение</a>
+            </li>
+            <li class="menu__item menu__item--plans">
+              <a href="plans.html" class="menu__link menu__link--active"
+                >Планировки</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="tel:+74952214022"
+          class="header__phone header__phone--plans"
+          aria-label="Позвонить по номеру +7 495 221-40-22"
+          >+7 (495) 221-40-22</a
+        >
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero hero__plans" id="hero">
+        <div class="container hero__container-plans">
+          <h1 class="hero__title-location">
+            <span
+              class="hero__title-text-location hero__title-text-location--line"
+              >Выбирайте планировку </span
+            ><span
+              class="hero__title-text-location hero__title-text-location--secondary"
+              >для любого бизнеса</span
+            >
+          </h1>
+
+          <div class="hero__media">
+            <div class="hero__image-wrapper">
+              <img
+                src="./assets/images/plans-images/hero-plans-image.png"
+                alt="Бизнес-квартал Ясенево"
+                class="hero__image hero__image--plans"
+              />
+
+              <img
+                src="./assets/images/plans-images/hero-mobile-plans.png"
+                alt="Бизнес-центр Ясенево"
+                class="hero__image-mobile-plans"
+              />
+            </div>
+
+            <aside
+              class="hero__stats hero__stats--plans"
+              aria-label="Краткая информация о проекте"
+            >
+              <div class="hero__stats-wrapper hero__stats-wrapper--plans">
+                <ul class="hero__stats-list hero__stats-list--feature">
+                  <li class="hero__stats-item hero__stats-item--feature hero__stats-item--custom">
+                    <span class="hero__stats-value">от 60 м²</span>
+                    <span class="hero__stats-text hero__stats-text--feature hero__stats-text--custom"
+                      >помещения под офисы</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <div class="hero__text-wrapper hero__text-wrapper--features">
+            <p class="hero__text hero__text--plans">
+              Vita-офисы в бизнес-квартале – новые эффективные рабочие
+              пространства на основе идеи витальности (жизненной силы), эстетики
+              и функциональности. Создают благоприятное воздействие на
+              эмоциональное состояние и работоспособность сотрудников, развитие
+              бизнеса. Это единая цифровая среда, инфраструктура для резидентов
+              и уникальные шеринг-помещения: комната для тимбилдинга, лекторий,
+              кабинет врача, йога-класс и многое другое.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="plans">
+        <div class="container plans__container">
+          <div class="plans__title">
+            <span class="plans__title-line">Планировки</span>
+          </div>
+
+          <div class="plans__grid">
+            <article class="plans__card">
+              <img
+                src="./assets/images/plans-images/office-plans/office-plan-174-2-01.png"
+                alt="Планировка офиса площадью 174,2 м²"
+                class="plans__card-image"
+              />
+              <h2 class="plans__card-title">Офис, 174,2 м</h2>
+              <p class="plans__card-text">
+                Увлажнение воздуха. Кондиционирование. Контроль СО2. Фильтрация
+                воздуха. Вид на пруд. Вид на жилой район
+              </p>
+              <a href="#callback" class="plans__card-link">Заказать звонок</a>
+            </article>
+            <article class="plans__card">
+              <img
+                src="./assets/images/plans-images/office-plans/office-plan-174-2-02.png"
+                alt="Планировка офиса площадью 174,2 м²"
+                class="plans__card-image plans__card-image--accent"
+              />
+              <h2 class="plans__card-title">Офис, 174,2 м</h2>
+              <p class="plans__card-text plans__card-text--accent">
+                Увлажнение воздуха. Кондиционирование. Контроль СО2. Фильтрация
+                воздуха. Вид на пруд.
+                <span class="plans__card-text--desktop"
+                  >Вид на спортивно-событийный комплекс</span
+                ><span class="plans__card-text--tablet"
+                  >Вид на жилой район</span
+                >
+              </p>
+              <a href="#callback" class="plans__card-link">Заказать звонок</a>
+            </article>
+            <article class="plans__card">
+              <img
+                src="./assets/images/plans-images/office-plans/office-plan-174-2-03.png"
+                alt="Планировка офиса площадью 174,2 м²"
+                class="plans__card-image"
+              />
+              <h2 class="plans__card-title">Офис, 174,2 м</h2>
+              <p class="plans__card-text">
+                Увлажнение воздуха. Кондиционирование. Контроль СО2. Фильтрация
+                воздуха. Вид на пруд. Вид на жилой район
+              </p>
+              <a href="#callback" class="plans__card-link">Заказать звонок</a>
+            </article>
+            <article class="plans__card">
+              <img
+                src="./assets/images/plans-images/office-plans/office-plan-174-2-04.png"
+                alt="Планировка офиса площадью 174,2 м²"
+                class="plans__card-image"
+              />
+              <h2 class="plans__card-title">Офис, 174,2 м</h2>
+              <p class="plans__card-text">
+                Увлажнение воздуха. Кондиционирование. Контроль СО2. Фильтрация
+                воздуха. Вид на пруд. Вид на жилой район
+              </p>
+              <a href="#callback" class="plans__card-link">Заказать звонок</a>
+            </article>
+            <article class="plans__card">
+              <img
+                src="./assets/images/plans-images/office-plans/office-plan-174-2-05.png"
+                alt="Планировка офиса площадью 174,2 м²"
+                class="plans__card-image"
+              />
+              <h2 class="plans__card-title">Офис, 174,2 м</h2>
+              <p class="plans__card-text">
+                Увлажнение воздуха. Кондиционирование. Контроль СО2. Фильтрация
+                воздуха. Вид на пруд. Вид на жилой район
+              </p>
+              <a href="#callback" class="plans__card-link">Заказать звонок</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="plans__image-wrapper">
+          <img
+            src="./assets/images/index-images/location-entrance-image.png"
+            alt="Входная зона бизнес-квартала Ясенево"
+            class="plans__image"
+          />
+          <img
+            src="./assets/images/plans-images/plans-image.png"
+            alt="Входная зона бизнес-квартала Ясенево"
+            class="plans__image-tablet"
+          />
+          <img
+            src="./assets/images/plans-images/plans-mobile-image.png"
+            alt="Входная зона бизнес-квартала Ясенево"
+            class="plans__image-mobile"
+          />
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="container details__container">
+          <div class="details__label">
+            <span class="details__label-text">Подробно</span>
+          </div>
+
+          <div class="details__content">
+            <div class="details__info">
+              <h2 class="details__title">
+                Вся информация о проекте — в презентации
+              </h2>
+
+              <ul class="details__list">
+                <li class="details__item">25 слайдов подробной информации</li>
+                <li class="details__item">
+                  Инфраструктура, благоустройство, расположение
+                </li>
+                <li class="details__item">Инженерия, концепция и тд.</li>
+              </ul>
+
+              <a href="#" class="details__button">Скачать презентацию</a>
+            </div>
+
+            <div class="details__file">
+              <img
+                src="./assets/images/index-images/svg/pdf-icon.svg"
+                alt=""
+                class="details__file-icon"
+              />
+                <img
+                src="./assets/images/index-images/svg/mobile-details-icon.svg"
+                alt=""
+                class="details__file-icon-mobile"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="callback">
+      <div class="container footer__container">
+        <div class="footer__top">
+          <h2 class="footer__title">
+            Подберем лучшее помещение <br />
+            под ваши задачи, основываясь <br />
+            на аналитике бизнес-среды в <br />
+            локации.
+          </h2>
+
+          <form class="footer__form" action="#" method="post">
+            <label class="footer__field">
+              <span class="footer__field-text">Ваше имя</span>
+              <input
+                class="footer__input"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+              />
+            </label>
+
+            <label class="footer__field">
+              <span class="footer__field-text">Ваш телефон</span>
+              <input
+                class="footer__input"
+                type="tel"
+                name="phone"
+                placeholder="+7 987 654 32 10"
+              />
+            </label>
+
+            <button class="footer__button" type="submit">
+              Получить консультацию
+            </button>
+          </form>
+        </div>
+
+        <div class="footer__bottom">
+          <a href="#hero" class="footer__logo-link"
+            ><img
+              src="./assets/images/index-images/svg/footer-logo.svg"
+              alt="БК 'Ясенево'"
+              class="footer__logo-image"
+          /></a>
+
+          <address class="footer__contacts">
+            <a class="footer__phone" href="tel:+74952214022">
+              +7 (495) 221-40-22
+            </a>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

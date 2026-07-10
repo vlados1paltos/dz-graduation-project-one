@@ -129,3 +129,165 @@
         max-width: 233px;
         }
 }
+
+@media (max-width: $breakpoint-laptop) {
+    .infra {
+        &__container {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 290px);
+        }
+}
+}
+
+@media (max-width: $breakpoint-small-laptop) {
+    .infra {
+        &__grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-rows: repeat(2, 230px);
+        }
+
+        &__card-title {
+            left: 16px;
+            bottom: 24px;
+            font-size: 16px;
+            max-width: calc(100% - 32px);
+        }
+
+        &__card--parking {
+            width: auto;
+            justify-self: stretch;
+        }
+
+        &__card--residents {
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .infra {
+        padding-bottom: 60px;
+
+        &__container {
+            padding: 0 50px;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: 300px 300px 300px 300px;
+            grid-template-areas: 
+            "center center"
+            "parking landscape"
+            "residents lounge"
+            "residents shops";
+
+            gap: 10px;
+        }
+
+        &__card-title {
+            max-width: 233px;
+            font-size: 18px;
+        }
+
+        &__card-image--feature {
+            height: auto;
+        }
+
+        &__card-title--residents {
+            max-width: 220px;
+        }
+
+        &__card-title--center {
+            max-width: 395px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small-tablet) {
+    .infra {
+        &__container {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .infra {
+        &__container {
+            padding: 0 30px;
+        }
+
+        &__label-text {
+            font-size: 12px;
+            margin-bottom: 11px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 29px;
+        }
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__card-image {
+            width: 480px;
+            height: 300px;
+        }
+
+        &__card-image--feature {
+            height: 610px;
+        } 
+
+        &__card-title {
+            font-size: 18px;
+            max-width: 254px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small-mobile) {
+    .infra {
+        &__container {
+            padding: 0 15px;
+        }
+
+        &__label-text {
+            font-size: 12px;
+            margin-bottom: 11px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 29px;
+        }
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &__card-image {
+            width: 343px;
+            height: 300px;
+        }
+
+        &__card-image--feature {
+            height: 610px;
+        } 
+
+        &__card-title {
+            font-size: 18px;
+            max-width: 254px;
+        }
+    }
+}

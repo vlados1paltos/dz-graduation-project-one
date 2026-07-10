@@ -9,10 +9,21 @@
 
         &__logo-link {
             margin-right: 341px;
+            flex-shrink: 0;
+        }
+
+        &__logo-phone-link {
+          display: none;
         }
 
         &__logo-img {
             display: block;
+            width: 234px;
+            height: auto;
+        }
+
+        &__logo-phone-img {
+            display: none;
         }
 
         &__phone {
@@ -25,6 +36,9 @@
             line-height: 150%;
             margin-left: 49px;
             transition: $transition-base;
+            flex-shrink: 0;
+            white-space: nowrap;
+            transform: translateX(10px);
         }
 
         &__phone:hover {
@@ -50,7 +64,203 @@
             &--active {
                 font-weight: 600;
                 line-height: 140%; 
-                margin-right: 9px;
             }
         }
+}
+
+@media (max-width: $breakpoint-laptop) {
+  .header {
+    &__logo-link {
+      flex-shrink: 0;
+      transform: translateX(40px);
+    }
+
+    &__phone {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+  }
+
+  .menu {
+    &__list {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small-laptop) {
+  .header {
+    &__logo-link {
+      flex-shrink: 0;
+      margin-right: 190px;
+    }
+
+    &__phone {
+      flex-shrink: 0;
+      white-space: nowrap;
+      margin-left: 25px;
+    }
+  }
+
+      .menu {
+        &__link {
+          &--active {
+            margin-right: 0;
+          }
+        }
+      }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .header {
+
+      padding-bottom: 50px;
+      &__container {
+        align-items: center;
+        padding: 0 50px;
+      }
+
+      &__logo-link {
+        margin-right: 0px;
+        transform: none;
+      }
+
+      &__logo-img {
+        width: 147px;
+        height: auto;
+      }
+
+      &__phone {
+        margin-left: 32px;
+        margin-right: 0;
+        transform: none;
+        width: 166px;
+        height: 45px;
+        padding: 12px 20px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .menu {
+      margin-left: auto;
+      width: 250px;
+      padding-top: 0;
+
+      &__list {
+        justify-content: flex-end;
+        gap: 30px;
+      }
+
+      &__item {
+        width: auto;
+      }
+
+      &__link {
+        white-space: nowrap;
+        font-size: 16px;
+      }
+    }
+
+  .page-home .menu__item--home,
+  .page-location .menu__item--location,
+  .page-plans .menu__item--plans {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-small-tablet) {
+    .header {
+      &__container {
+        padding: 0 30px;
+      }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .header {
+      padding-bottom: 60px;
+
+      &__container {
+        padding: 0 30px;
+      }
+
+      &__phone--disabled {
+        display: none;
+      }
+
+      &__logo-phone-link {
+        display: inline-flex;
+        width: 63px;
+        height: 49px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: auto;
+      }
+
+      &__logo-phone-img {
+        display: block;
+        width: 63px;
+        height: 49px;
+        object-fit: contain;
+      }
+
+      &__phone--location {
+        display: none;
+      }
+
+      &__phone--plans {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+}
+
+@media (max-width: $breakpoint-small-mobile) {
+    .header {
+      padding-bottom: 60px;
+
+      &__container {
+        padding: 0 15px;
+      }
+
+      &__phone--disabled {
+        display: none;
+      }
+
+      &__logo-phone-link {
+        display: inline-flex;
+        width: 63px;
+        height: 49px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: auto;
+      }
+
+      &__logo-phone-img {
+        display: block;
+        width: 63px;
+        height: 49px;
+        object-fit: contain;
+      }
+
+      &__phone--location {
+        display: none;
+      }
+
+      &__phone--plans {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
 }

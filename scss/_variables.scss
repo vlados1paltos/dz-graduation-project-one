@@ -12,5 +12,10 @@ $color-primary-blue: #2c3878;
 $transition-base: 0.3s ease;
 
 // Breakpoints
-$breakpoint-tablet: 1024px;
-$breakpoint-mobile: 768px;
+$breakpoint-laptop: 1200px;
+$breakpoint-small-laptop: 1024px;
+$breakpoint-tablet: 834px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-mobile: 480px;
+$breakpoint-small-mobile: 375px;
+$breakpoint-extra-small-mobile: 320px;
