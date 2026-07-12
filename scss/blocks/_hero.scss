@@ -85,6 +85,10 @@
             max-width: 748px;
         }
 
+        &__text-git {
+            display: none;
+        }
+
         &__media {
             position: relative;
         }
@@ -1056,6 +1060,54 @@
     &__button-plans {
         width: 140px;
         font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .page-home {
+    .hero {
+      &__media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        position: static;
+      }
+
+      &__stats {
+        position: static;
+        top: auto;
+        right: auto;
+        left: auto;
+        transform: none;
+        order: -1;
+        width: 100%;
+        max-width: none;
+        min-height: 89px;
+        box-sizing: border-box;
+      }
+
+      &__image-wrapper {
+        width: 100%;
+      }
+
+      &__image-mobile-main {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      &__buttons-wrapper {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+      }
     }
   }
 }
